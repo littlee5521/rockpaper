@@ -7,6 +7,7 @@
     <title>Document</title>
   </head>
   <body>
+    <h1>May your endeavors in this code go better then mine</h1>
     <script>
       let playerChoice = window.prompt("rock paper scisscors", " ");
       function getComputerChoice() {
@@ -60,14 +61,17 @@
       console.log(playerChoice + "    player");
       let xyz = getComputerChoice();
       console.log(xyz);
+      let playerWins = 0;
+      let computerWins = 0;
       for (let i = 0; i < 5; i++) {
-        let playerWins = 0;
-        let computerWins = 0;
-        let gameReport = rockPaper(playerChoice, xyz);
-        let winnings = gameReport.slice(0, 8);
-        if (winnings == "you lose") {
-        }
+        gameReport = rockPaper(playerChoice, xyz);
+        winnings = gameReport.slice(0, 8);
         console.log(winnings);
+        console.log(i);
+        if (winnings === "you lose") {
+          computerWins++;
+          console.log(computerWins + "compuiter ");
+        }
       }
     </script>
   </body>
