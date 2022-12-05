@@ -37,6 +37,10 @@ body {
     flex-direction: column;
     font-size: 30px;
 }
+.gamebtn {
+    background-color: gray;
+    border-style: none;
+}
 .gameIcon {
     height: 400px;
     width: auto;
