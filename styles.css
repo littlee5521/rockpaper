@@ -1,0 +1,43 @@
+body {
+    background-color: gray;
+    color: antiquewhite;
+    text-align: center;
+}
+
+/* Header */
+
+.header {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.title {
+    font-size: 50px;
+    margin-bottom: 0%;
+}
+.scoreContainer {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-size: 30px;
+}
+.output {
+    font-size: 30px;
+}
+/* Content*/
+
+.gameContainer {
+    display: flex;
+    flex: auto;
+    margin-top: 200px;
+    justify-content: space-between;
+}
+.gameContent {
+    display: flex;
+    flex-direction: column;
+    font-size: 30px;
+}
+.gameIcon {
+    height: 400px;
+    width: auto;
+}
